@@ -32,7 +32,7 @@ module.exports = ({ config, containerMiddleware, logger, loggerMiddleware, error
 
   const limiter = rateLimit({
     windowMs: 1 * 60 * 1000, // 1 minute
-    max: 40,
+    max: 70,
     message: {
       status: false,
       code: httpStatus.TOO_MANY_REQUESTS,

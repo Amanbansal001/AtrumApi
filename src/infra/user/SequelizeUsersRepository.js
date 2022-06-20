@@ -139,7 +139,7 @@ class SequelizeUsersRepository {
 
     if(otp==-1){
       const error = new Error('ValidationError');
-      error.details = "Otp  not generated";
+      error.details = "Otp not generated";
 
       throw error;
     }

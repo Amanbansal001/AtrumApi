@@ -309,7 +309,7 @@ class SequelizeModuleRepository {
           as: 'user',
           attributes: ["id", "name", "country", "comission", "signature", "bio", "profilePic", "roleType", "email",
             "state", "city", "zipCode", "address", "status", "nationality",
-            "countryCode", "phone", "createdAt", "updatedAt"]
+            "countryCode", "phone", "createdAt", "updatedAt","isWonderRoom"]
         },
         {
           model: this.OrderAddressesModel,
@@ -457,7 +457,7 @@ class SequelizeModuleRepository {
             as: 'user',
             attributes: ["id", "name", "country", "comission", "signature", "bio", "profilePic", "roleType", "email",
               "state", "city", "zipCode", "address", "status", "nationality",
-              "countryCode", "phone", "createdAt", "updatedAt"],
+              "countryCode", "phone", "createdAt", "updatedAt","isWonderRoom"],
           },
           {
             model: this.CategorysModel,
@@ -495,7 +495,7 @@ class SequelizeModuleRepository {
             as: 'user',
             attributes: ["id", "name", "country", "comission", "signature", "bio", "profilePic", "roleType", "email",
               "state", "city", "zipCode", "address", "status", "nationality",
-              "countryCode", "phone", "createdAt", "updatedAt"],
+              "countryCode", "phone", "createdAt", "updatedAt","isWonderRoom"],
           },
           {
             model: this.CategorysModel,
@@ -559,7 +559,7 @@ class SequelizeModuleRepository {
             as: 'user',
             attributes: ["id", "name", "country", "comission", "signature", "bio", "profilePic", "roleType", "email",
               "state", "city", "zipCode", "address", "status", "nationality",
-              "countryCode", "phone", "createdAt", "updatedAt"],
+              "countryCode", "phone", "createdAt", "updatedAt","isWonderRoom"],
           },
           {
             model: this.CategorysModel,
@@ -597,7 +597,7 @@ class SequelizeModuleRepository {
             as: 'user',
             attributes: ["id", "name", "country", "comission", "signature", "bio", "profilePic", "roleType", "email",
               "state", "city", "zipCode", "address", "status", "nationality",
-              "countryCode", "phone", "createdAt", "updatedAt"],
+              "countryCode", "phone", "createdAt", "updatedAt","isWonderRoom"],
           },
           {
             model: this.CategorysModel,
@@ -628,7 +628,7 @@ class SequelizeModuleRepository {
           as: 'user',
           attributes: ["id", "name", "country", "comission", "signature", "bio", "profilePic", "roleType", "email",
             "state", "city", "zipCode", "address", "status", "nationality",
-            "countryCode", "phone", "createdAt", "updatedAt"],
+            "countryCode", "phone", "createdAt", "updatedAt","isWonderRoom"],
         },
         {
           model: this.WishlistsModel,
@@ -918,7 +918,7 @@ class SequelizeModuleRepository {
             as: 'user',
             attributes: ["id", "name", "country", "comission", "signature", "bio", "profilePic", "roleType", "email",
               "state", "city", "zipCode", "address", "status", "nationality",
-              "countryCode", "phone", "createdAt", "updatedAt"],
+              "countryCode", "phone", "createdAt", "updatedAt","isWonderRoom"],
           },
           
         ]
@@ -932,7 +932,7 @@ class SequelizeModuleRepository {
             as: 'user',
             attributes: ["id", "name", "country", "comission", "signature", "bio", "profilePic", "roleType", "email",
               "state", "city", "zipCode", "address", "status", "nationality",
-              "countryCode", "phone", "createdAt", "updatedAt"],
+              "countryCode", "phone", "createdAt", "updatedAt","isWonderRoom"],
           },
           
         ]
@@ -992,7 +992,7 @@ class SequelizeModuleRepository {
         where: req.sqlExplorer.where,
         attributes: ["id", "name", "country", "comission", "signature", "bio", "profilePic", "roleType", "email",
           "state", "city", "zipCode", "address", "status", "nationality",
-          "countryCode", "phone", "createdAt", "updatedAt"],
+          "countryCode", "phone", "createdAt", "updatedAt","isWonderRoom"],
         include: [include]
       });
     } else {
@@ -1000,7 +1000,7 @@ class SequelizeModuleRepository {
         where: req.sqlExplorer.where,
         attributes: ["id", "name", "country", "comission", "signature", "bio", "profilePic", "roleType", "email",
           "state", "city", "zipCode", "address", "status", "nationality",
-          "countryCode", "phone", "createdAt", "updatedAt"],
+          "countryCode", "phone", "createdAt", "updatedAt","isWonderRoom"],
       });
     }
 
@@ -1023,7 +1023,7 @@ class SequelizeModuleRepository {
         where: { ...req.sqlExplorer.where, id: id },
         attributes: ["id", "name", "country", "comission", "signature", "bio", "profilePic", "roleType", "email",
           "state", "city", "zipCode", "address", "status", "nationality",
-          "countryCode", "phone", "createdAt", "updatedAt"],
+          "countryCode", "phone", "createdAt", "updatedAt","isWonderRoom"],
         include: [include]
       });
     } else {
@@ -1031,7 +1031,7 @@ class SequelizeModuleRepository {
         where: { ...req.sqlExplorer.where, id: id, },
         attributes: ["id", "name", "country", "comission", "signature", "bio", "profilePic", "roleType", "email",
           "state", "city", "zipCode", "address", "status", "nationality",
-          "countryCode", "phone", "createdAt", "updatedAt"],
+          "countryCode", "phone", "createdAt", "updatedAt","isWonderRoom"],
       });
     }
     return data;
