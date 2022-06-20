@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Mailer</title>
+</head>
+
+<body style="background:#C9D9D6">
+
+<div style="width:680px; margin:0 auto; padding:20px 50px; background:#C9D9D6; font-family:Arial, Helvetica, sans-serif">
+
+<table cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+    	<td ><p style="text-align: center"><img src="logo.png" height="60" /></p></td> 
+    </tr>
+</table>
+<table cellpadding="0" cellspacing="0" style="background:#fff; box-shadow: 10px 10px 40px #00000033; border:#ececec thin solid; padding:10px 20px; font-family:Tahoma, Geneva, sans-serif" width="100%" >
+	<tr>
+    	<td><p style="font-size:17px; margin-bottom: 10px">Hi, <strong>{{name}}</strong></p></td>
+    </tr>
+    <tr>
+    	<td>        
+        	<table cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                    <td  valign="top">
+                        <p style="font-size:22px; color:#828282; line-height:30px; margin-bottom: 0" >You order has been marked as <strong>{{orderHeading}}</strong>.</p> 
+						<p style="font-size:15px; color:#828282">{{userDescription}}</p>
+						<p style="font-size:15px; color:#828282">{{orderItems}}</p>
+						
+						<table cellpadding="0" cellspacing="0" width="100%">
+							<tr>
+								<td bgcolor="#eeeeee" style="font-size: 15px; font-weight: 800; line-height: 24px; padding: 10px;"> Order Confirmation # </td>
+								<td bgcolor="#eeeeee" style="font-size: 15px; font-weight: 800; line-height: 24px; padding: 10px;"> {{orderId}} </td>
+							</tr>
+							<tr>
+								<td style="font-size: 15px; line-height: 24px; padding:10px;"> Shipping + Handling </td>
+								<td  style="font-size: 15px; line-height: 24px; padding:10px;"> {{shippingAmt}} </td>
+							</tr>
+							<tr>
+								<td style="font-size: 15px; line-height: 24px; padding:10px;"> Vat </td>
+								<td  style="font-size: 15px; line-height: 24px; padding:10px;"> $ {{vat}} </td>
+							</tr> 
+							
+							<tr>
+								<td style="font-size: 15px; font-weight: bold; line-height: 24px; padding:5px 10px; border-top:3px solid #eeeeee;border-bottom:3px solid #eeeeee"> TOTAL </td>
+								<td  style="font-size: 15px; font-weight: bold; line-height: 24px; padding:5px 10px; border-top:3px solid #eeeeee;border-bottom:3px solid #eeeeee"> ${{total}} </td>
+							</tr> 
+						</table>
+						<table cellpadding="0" cellspacing="0" width="100%">
+							<tr>
+								<td  valign="top">
+									<p style="font-size:15px; color:#000;  line-height:24px;">Shipping Address<br /><span style=" color:#828282; font-size:14px;">Sv Delhi India,Delhi,Delhi</span></p>
+								</td> 
+								<td  valign="top">
+									<p style="font-size:15px; color:#000;  line-height:24px;">Billing Address<br /><span style=" color:#828282; font-size:14px;">Sv Delhi India,Delhi,Delhi</span></p>
+								</td> 
+							</tr>
+						</table>
+						 
+                    </td> 
+                </tr>
+            </table>
+        </td>
+    </tr>
+    
+     
+</table>
+
+
+<table cellpadding="0" cellspacing="0"  style="padding:10px; font-family:Tahoma, Geneva, sans-serif" width="100%" >
+	<tr>
+        <td width="70%">
+        	<p style="font-size:12px; color:#666; line-height:20px">
+            	Thanks<br />
+                <strong>Atrum Team</strong>
+            </p>
+        </td>
+        <td width="30%">
+        	<p style="text-align:center; color:#5c5c5c; font-size:11px; line-height: 15px;">For more information, Please visit <a href="https://atrumart.com/" style="color:#000">https://atrumart.com/</a></p>	
+        </td>
+    </tr>
+    <tr>
+    	<td colspan="2"></td>
+    </tr>
+</table>
+
+
+
+
+</div>
+
+</body>
+</html>

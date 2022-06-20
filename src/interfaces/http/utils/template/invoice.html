@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div style="border: #000000 thin solid; width:700px; padding:4px 7px 3px; font-family:Arial; ">
+
+        <table cellspacing="0" cellpadding="0" style="width: 100%;  border-collapse: collapse">
+            <tr>
+                <td style="width: 150px"><img src="https://staging.app.atrumart.com/assets/images/invoice/logo.png" style="width: 150px" /></td>
+                <td>
+                    <h4 style="text-align: center; font-size: 25px; font-weight: bold; margin: 0px;">فاتورة ضريبية</h4>
+                    <h4 style="text-align: center; font-size: 25px; font-weight: bold; margin: 0px;">Tax Invoice</h4>
+                </td>
+            </tr>
+        </table>
+
+        <table cellspacing="0" cellpadding="0"
+            style="width: 100%; margin-top: 3px; font-size: 13px; border-collapse: collapse">
+            <tr>
+                <td style="width: 70%; vertical-align: middle;">
+                    <table cellspacing="0" cellpadding="0" width="100%">
+                        <tr>
+                            <td width="29%"
+                                style="padding: 10px; border-top: #000000 thin solid; border-left: #000000 thin solid; border-right: #000000 thin solid;">
+                                <strong>Invoice Number</strong></td>
+                            <td width="71%"
+                                style="padding: 10px; border-top: #000000 thin solid; border-right: #000000 thin solid;">
+                                {{orderId}}</td>
+                        </tr>
+                        <tr>
+                            <td
+                                style="padding: 10px; border-top: #000000 thin solid; border-left: #000000 thin solid; border-right: #000000 thin solid;">
+                                <strong>Issue Date</strong></td>
+                            <td
+                                style="padding: 10px; border-top: #000000 thin solid; border-right: #000000 thin solid;">
+                                {{invoiceDate}}</td>
+                        </tr>
+                        <tr>
+                            <td
+                                style="padding: 10px; border-top: #000000 thin solid; border-left: #000000 thin solid; border-right: #000000 thin solid; border-bottom: #000000 thin solid;">
+                                <strong>Date of supply</strong></td>
+                            <td
+                                style="padding: 10px; border-top: #000000 thin solid; border-right: #000000 thin solid; border-bottom: #000000 thin solid;">
+                                {{invoiceDate}}</td>
+                        </tr>
+                    </table>
+                </td>
+                <td style="text-align: center">
+                    <img src="https://staging.app.atrumart.com/assets/images/invoice/Picture.png" width="110px" alt="">
+                </td>
+            </tr>
+        </table>
+
+        <table cellpadding="0" cellspacing="0" width="100%"
+            style="margin-top: 0px; font-size: 13px; background: url('https://staging.app.atrumart.com/assets/images/invoice/bg.png') no-repeat center; ">
+            <tr>
+                <td style="width: 50%;">
+                    <table cellpadding="0" cellspacing="0" width="100%" style="padding-right: 5px;">
+                        <tr style="background:#5d5c5c">
+                            <td style="border: #000000 thin solid; border-right: none; padding: 5px; color: #ffffff; ">
+                                Seller</td>
+                            <td
+                                style="border: #000000 thin solid; border-right: none; padding: 5px; border-left: none; ">
+                            </td>
+                            <td style="border: #000000 thin solid;  padding: 5px; border-left: none; color: #ffffff;  ">
+                                &nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td
+                                style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px; ">
+                                <strong>Name</strong></td>
+                            <td
+                                style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px;  ">مؤسسة الصوت للتجارة</td>
+                            <td style="border: #000000 thin solid; border-top: none;  padding: 5px; ">الاسم</td>
+                        </tr>
+
+                        <tr>
+                            <td
+                                style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px; ">
+                                <strong>Street Name</strong></td>
+                            <td
+                                style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px;  ">أنس بن مالك
+                            </td>
+                            <td style="border: #000000 thin solid; border-top: none;  padding: 5px; ">اﺳم اﻟﺷﺎرع</td>
+                        </tr>
+
+                        <tr>
+                            <td
+                                style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px; ">
+                                <strong>District</strong></td>
+                            <td
+                                style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px;  ">الملقا
+                            </td>
+                            <td style="border: #000000 thin solid; border-top: none;  padding: 5px; ">اﻟﺣﻲ</td>
+                        </tr>
+
+                        <tr>
+                            <td
+                                style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px; ">
+                                <strong>City</strong></td>
+                            <td
+                                style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px;  ">الرياض
+                            </td>
+                            <td style="border: #000000 thin solid; border-top: none;  padding: 5px; ">اﻟﻣدﯾﻧﺔ</td>
+                        </tr>
+
+                        <tr>
+                            <td
+                                style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px; ">
+                                <strong> Country</strong></td>
+                            <td
+                                style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px;  ">المملكة العربية السعودية
+                            </td>
+                            <td style="border: #000000 thin solid; border-top: none;  padding: 5px; ">اﻟﺑﻠد</td>
+                        </tr>
+
+                        <tr>
+                            <td
+                                style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px; ">
+                                <strong>Postal code</strong></td>
+                            <td
+                                style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px;  ">13521
+                            </td>
+                            <td style="border: #000000 thin solid; border-top: none; padding: 5px; ">اﻟرﻣز اﻟﺑرﯾدي</td>
+                        </tr>
+
+
+                        <tr>
+                            <td
+                                style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px; ">
+                                <strong>Addtional No </strong></td>
+                            <td
+                                style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px;  ">8395
+                            </td>
+                            <td style="border: #000000 thin solid; border-top: none; padding: 5px; ">اﻟرﻗم اﻻﺿﺎﻓﻲ</td>
+                        </tr>
+
+                        <tr>
+                            <td
+                                style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px; ">
+                                <strong>Vat Number</strong></td>
+                            <td
+                                style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px;  ">
+                                302277897500003</td>
+                            <td style="border: #000000 thin solid; border-top: none; padding: 5px; ">رﻗم ﺗﺳﺟﯾل ﺿرﯾﺑﺔ
+                                اﻟﻘﯾﻣﺔ اﻟﻣﺿﺎﻓﺔ</td>
+                        </tr>
+
+                        <tr>
+                            <td
+                                style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px; ">
+                                <strong>Other seller ID</strong></td>
+                            <td
+                                style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px; ">
+                            </td>
+                            <td style="border: #000000 thin solid; border-top: none; padding: 5px; ">ﻣﻌرف أﺧر</td>
+                        </tr>
+                    </table>
+                </td>
+
+                <td style="width: 50%; vertical-align: top;">
+                    <table cellpadding="0" cellspacing="0" width="100%">
+                        <tr style="background:#5d5c5c">
+                            <td style="border: #000000 thin solid; border-right: none; padding: 5px; color: #ffffff; ">
+                                Buyer</td>
+                            <td width="33%"
+                                style="border: #000000 thin solid; border-right: none; border-left: none; padding: 5px; color: #ffffff; ">
+                            </td>
+                            <td style="border: #000000 thin solid; border-left: none;  padding: 5px;"></td>
+                        </tr>
+
+                        <tr>
+                            <td
+                                style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px; ">
+                                <strong>Name</strong></td>
+                            <td style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px;">{{name}}
+                            </td>
+                            <td style="border: #000000 thin solid; border-top: none;  padding: 5px; ">الاسم</td>
+                        </tr>
+
+                        <tr>
+                            <td
+                                style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px; ">
+                                <strong>Street Name</strong></td>
+                            <td style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px">
+                            </td>
+                            <td style="border: #000000 thin solid; border-top: none;  padding: 5px;">اﺳم اﻟﺷﺎرع</td>
+                        </tr>
+
+                        <tr>
+                            <td
+                                style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px; ">
+                                <strong>District</strong></td>
+                            <td
+                                style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px;  ">{{state}}
+                            </td>
+                            <td style="border: #000000 thin solid; border-top: none;  padding: 5px; ">اﻟﺣﻲ</td>
+                        </tr>
+
+                        <tr>
+                            <td
+                                style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px; ">
+                                <strong>City</strong></td>
+                            <td style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px;">{{city}}
+                            </td>
+                            <td style="border: #000000 thin solid; border-top: none;  padding: 5px; ">اﻟﻣدﯾﻧﺔ</td>
+                        </tr>
+
+                        <tr>
+                            <td
+                                style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px; ">
+                                <strong> Country</strong></td>
+                            <td style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px;">{{country}}
+                            </td>
+                            <td style="border: #000000 thin solid; border-top: none;  padding: 5px; ">اﻟﺑﻠد</td>
+                        </tr>
+
+                        <tr>
+                            <td
+                                style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px; ">
+                                <strong>Postal code</strong></td>
+                            <td
+                                style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px;  ">{{zipCode}}
+                            </td>
+                            <td style="border: #000000 thin solid; border-top: none; padding: 5px; ">اﻟرﻣز اﻟﺑرﯾدي</td>
+                        </tr>
+
+
+                        <tr>
+                            <td
+                                style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px; ">
+                                <strong>Addtional No </strong></td>
+                            <td
+                                style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px;  ">
+                            </td>
+                            <td style="border: #000000 thin solid; border-top: none; padding: 5px; ">اﻟرﻗم اﻻﺿﺎﻓﻲ</td>
+                        </tr>
+
+                        <tr>
+                            <td
+                                style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px; ">
+                                <strong>Vat Number</strong></td>
+                            <td
+                                style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px;  ">
+                            </td>
+                            <td style="border: #000000 thin solid; border-top: none; padding: 5px; ">رﻗم ﺗﺳﺟﯾل ﺿرﯾﺑﺔ
+                                اﻟﻘﯾﻣﺔ اﻟﻣﺿﺎﻓﺔ</td>
+                        </tr>
+
+                        <tr>
+                            <td
+                                style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px; ">
+                                <strong>Other buyer ID</strong></td>
+                            <td
+                                style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px; ">
+                            </td>
+                            <td style="border: #000000 thin solid; border-top: none; padding: 5px; ">ﻣﻌرف أﺧر</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <table cellpadding="0" cellspacing="0" width="100%" style="margin-top: 3px; font-size: 13px;">
+            <tr style="background:#9c9a9a">
+                <td colspan="7" style="border: #000000 thin solid; border-right: none; padding: 5px; color: #ffffff;  ">
+                    <strong>List Items</strong></td>
+
+                <td style="border: #000000 thin solid; padding: 5px; border-left: none; color: #ffffff;  "><strong>ﺗوﺻﯾف
+                        اﻟﺳﻠﻌﺔ أو اﻟﺧدﻣﺔ :</strong></td>
+            </tr>
+            <tr style="background:#5d5c5c">
+                <td
+                    style="border: #000000 thin solid; border-right: none; border-top: none; padding: 5px; color: #ffffff; ">
+                    <strong>Name of goods or services <br>واﻟﺧدﻣﺎت ﺗﻔﺎﺻﯾل اﻟﺳﻠﻊ</strong></td>
+                <td
+                    style="border: #000000 thin solid; border-right: none; padding: 5px; border-top: none; color: #ffffff;  ">
+                    <strong>Unit Price <br>ﺳﻌر اﻟوﺣدة</strong></td>
+                <td
+                    style="border: #000000 thin solid; border-right: none; padding: 5px; border-top: none; color: #ffffff; ">
+                    <strong>Quantity <br>اﻟﻛﻣﯾﺔ</strong></td>
+                <td
+                    style="border: #000000 thin solid; border-right: none; padding: 5px; border-top: none; color: #ffffff; ">
+                    <strong>Taxable Amount <br>ﻟﻠﺿرﯾﺑﺔاﻟﻣﺑﻠﻎ اﻟﺧﺎﺿﻊ</strong></td>
+                <td
+                    style="border: #000000 thin solid; border-right: none; padding: 5px; border-top: none; color: #ffffff; ">
+                    <strong>Discount <br>ﺧﺻوﻣﺎت</strong></td>
+                <td
+                    style="border: #000000 thin solid; border-right: none; padding: 5px; border-top: none; color: #ffffff; ">
+                    <strong>Vat Rate<br> ﻧﺳﺑﺔ
+                        اﻟﺿرﯾﺑﺔ</strong></td>
+                <td
+                    style="border: #000000 thin solid; border-right: none; padding: 5px; border-top: none; color: #ffffff; ">
+                    <strong>Vat Amount <br>ﻣﺑﻠﻎ اﻟﺿرﯾﺑﺔ</strong></td>
+                <td style="border: #000000 thin solid; padding: 5px; border-top: none;color: #ffffff;  "><strong>Item
+                        subtotal(Including VAT)<br>المجموع (شامل ضريبة القيمة المضافة)</strong></td>
+            </tr>
+            {{items}}
+           
+        </table>
+
+        <table cellpadding="0" cellspacing="0" width="100%" style="margin-top: 3px; font-size: 13px;">
+            <tr style="background:#5d5c5c">
+                <td style="border: #000000 thin solid; border-right: none; padding: 5px; color: #ffffff; "><strong>Total
+                        Amount</strong></td>
+                <td style="border: #000000 thin solid; border-right: none; border-left: none; padding: 5px; "></td>
+                <td
+                    style="border: #000000 thin solid; border-right: none; border-left: none; padding: 5px; color: #ffffff; ">
+                    <strong>${{vat}}</strong></td>
+                <td style="border: #000000 thin solid; padding: 5px; border-left: none; color: #ffffff;"> <strong>${{grandTotal}}</strong></td>
+            </tr>
+            <tr>
+                <td style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px; "></td>
+                <td style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px; ">
+                    <strong>Total (Excluding VAT)</strong></td>
+                <td style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px; ">اﻹﺟﻣﺎﻟﻲ ﺑﺎﺳﺗﺛﻧﺎء ﺿرﯾﺑﺔ اﻟﻘﯾﻣﺔ اﻟﻣﺿﺎﻓﺔ</td>
+                <td style="border: #000000 thin solid; border-top: none; padding: 5px; ">${{total}}</td>
+            </tr>
+            <tr>
+                <td style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px; "></td>
+                <td style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px; ">
+                    <strong>Discount</strong></td>
+                <td style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px; ">ﻣﺟﻣوع اﻟﺧﺻوﻣﺎت</td>
+                <td style="border: #000000 thin solid; border-top: none; padding: 5px; ">0</td>
+            </tr>
+            <tr>
+                <td style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px; "></td>
+                <td style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px; ">
+                    <strong>Total Taxable Amount <br> (Excluding VAT)</strong></td>
+                <td style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px; ">إﺟﻣﺎﻟﻲ اﻟﻣﺑﻠﻎ اﻟﺧﺎﺿﻊ ﻟﻠﺿرﯾﺑﺔ ﺑﺎﺳﺗﺛﻧﺎء ﺿرﯾﺑﺔ اﻟﻘﯾﻣﺔ اﻟﻣﺿﺎﻓﺔ</td>
+                <td style="border: #000000 thin solid; border-top: none; padding: 5px; ">${{total}}</td>
+            </tr>
+            <tr>
+                <td style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px; "></td>
+                <td style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px; ">
+                    <strong>Total VAT (USD)</strong></td>
+                <td style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px; ">ﻣﺟﻣوع ﺿرﯾﺑﺔ اﻟﻘﯾﻣﺔ اﻟﻣﺿﺎﻓﺔ ﺑﺎﻟدوﻻر اﻷﻣرﯾﻛﻲ</td>
+                <td style="border: #000000 thin solid; border-top: none; padding: 5px; ">${{vat}}</td>
+            </tr>
+            <tr>
+                <td style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px; "></td>
+                <td style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px; ">
+                    <strong>Total VAT (SAR)</strong></td>
+                <td style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px; ">ﻣﺟﻣوع ﺿرﯾﺑﺔ اﻟﻘﯾﻣﺔ اﻟﻣﺿﺎﻓﺔ ﺑﺎﻟ﷼ اﻟﺳﻌودي</td>
+                <td style="border: #000000 thin solid; border-top: none; padding: 5px; ">${{vatSAR}}</td>
+            </tr>
+            <tr>
+                <td style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px; "></td>
+                <td style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px; ">
+                    <strong>Total Shipping</strong></td>
+                <td style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px; ">إﺟﻣﺎﻟﻲ اﻟﺷﺣن</td>
+                <td style="border: #000000 thin solid; border-top: none; padding: 5px; ">${{shipping}}</td>
+            </tr>
+            <tr>
+                <td style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px; "></td>
+                <td style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px; ">
+                    <strong>Total Amount Due</strong></td>
+                <td style="border: #000000 thin solid; border-top: none; border-right: none; padding: 5px; ">إﺟﻣﺎﻟﻲ اﻟﻣﺑﻠﻎ اﻟﻣﺳﺗﺣﻖ</td>
+                <td style="border: #000000 thin solid; border-top: none; padding: 5px; ">${{grandTotal}}</td>
+            </tr>
+        </table>
+
+
+        <table cellspacing="0" cellpadding="0" style="width: 100%;  border-collapse: collapse">
+            <tr>
+                <td>
+                    <p style="color:#000; margin:5px 0 0; font-size:12px; line-height: 20px;">For more
+                        information,<br />Please visit <a href="https://atrumart.com/"
+                            style="color:#000000"><strong>https://atrumart.com/</strong></a></p>
+                    <p style="color: #4c4c4c; font-size: 11px; margin-top: 5px; margin: 0px; line-height: 18px">For any
+                        query please email us on <strong>hello@atrumart.com</strong></p>
+                </td>
+
+
+                <td style="text-align:left; ">
+                    <p style="font-size: 12px; color: #5e5e5e; margin:5px 0 5px ">Follow us on</p>
+                    <p style="margin: 0">
+                        <a href="https://m.facebook.com/profile.php?id=100074522262832"><img src="https://staging.app.atrumart.com/assets/images/invoice/fb.png"
+                                style="margin-right: 10px; width: 20px" /></a> <a
+                            href="https://twitter.com/atrum_sa?s=11"><img src="https://staging.app.atrumart.com/assets/images/invoice/tw.png"
+                                style="margin-right: 10px; width: 20px" /></a> <a
+                            href="https://www.instagram.com/atrum.sa/"><img src="https://staging.app.atrumart.com/assets/images/invoice/ins.png" style=" width: 20px" /></a>
+                    </p>
+                </td>
+            </tr>
+        </table>
+
+
+
+
+
+    </div>
+</body>
+
+</html>
